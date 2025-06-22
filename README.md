@@ -16,6 +16,10 @@ OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to 
 Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
 GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.
 
+**Database Design
+API Security
+**
+
 **2. User Authentication**
 
 Endpoints: /users/, /users/{user_id}/
@@ -24,7 +28,8 @@ Features: Register new users, authenticate, and manage user profiles.
 Endpoints: /properties/, /properties/{property_id}/
 Features: Create, update, retrieve, and delete property listings.
 
-**4. Booking System**
+**4. Feature Breakdown
+Booking System**
 
 Endpoints: /bookings/, /bookings/{booking_id}/
 Features: Make, update, and manage bookings, including check-in and check-out details.
@@ -43,6 +48,28 @@ Features: Post and manage reviews for properties.
    
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
+
+
+**🚀 CI/CD Pipeline**
+📌 What is a CI/CD Pipeline?
+A CI/CD pipeline (Continuous Integration/Continuous Deployment) is an automated process that handles the building, testing, and deployment of our application whenever changes are made to the codebase. It ensures new features, fixes, or improvements are tested, integrated, and deployed automatically, reducing manual effort and the risk of human error.
+
+✅ Why It Matters for our Project
+A CI/CD pipeline ensures that:
+
+Every time we push code to GitHub, tests run automatically to catch bugs early.
+
+Changes are deployed smoothly to our hosting environment (e.g., Render or Heroku).
+
+We maintain code quality, deployment reliability, and developer productivity even as the app scales or moves into production.
+
+🛠️ Tools We Can Use
+Tool	Purpose
+GitHub Actions	Automate workflows: run tests, linting, deployment steps on push/merge
+Docker	Package our app and dependencies into containers for consistent environments
+Render / Heroku	Host our app with simple deployment via GitHub
+PyTest	Run automated tests to validate our app
+Black + Flake8	Enforce code formatting and linting in the pipeline
 
 **⚙️ Technology Stack**
 
